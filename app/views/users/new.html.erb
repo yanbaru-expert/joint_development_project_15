@@ -1,5 +1,5 @@
 <h1>新規投稿</h1>
-<%= form_with model:@user local: true do |f| %>
+<%= form_with model:@user,local:true do |f| %>
 <p><%= f.text_field :name %></p>
 <p><%= f.text_field :age %></p>
 <%= f.submit "送信" %>
