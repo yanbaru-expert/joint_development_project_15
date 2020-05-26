@@ -1,7 +1,7 @@
 <%= form_with model: @task, local: true do |f| %>
 <h1>タスク 編集</h1>
-<p>タイトル <%= f.text_field :title, class: "form-control, form-control-sm" %></p>
-<p>内容 <%= f.text_field :content, class: "form-control, form-control-sm" %></p>
-<%=f.submit "送信",class: "form-control, form-control-sm" %><br>
+<p>タイトル <%= f.text_field :title, class: "form-control form-control-sm" %></p>
+<p>内容 <%= f.text_field :content, class: "form-control form-control-sm" %></p>
+<%=f.submit "送信",class: "form-control form-control-sm" %><br>
 <%= link_to "一覧画面へ", tasks_path %>
 <% end %>
